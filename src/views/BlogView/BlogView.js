@@ -58,7 +58,7 @@ const BlogView = () => {
     return (
         <Box p={1} m={1} >
             <Box textAlign="center" fontFamily="Monospace" m={1}>
-                <Typography className={classes.title} variant="h1" alignCenter gutterBottom>
+                <Typography className={classes.title} variant="h1" gutterBottom>
                     Posts View
                 </Typography>
             </Box>
