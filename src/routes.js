@@ -44,14 +44,9 @@ const routes = [
     {
         exact: true,
         path: '/',
-        component: () => <Redirect to="/blog" />
-    },
-    {
-        exact: true,
         layout: MainLayout,
-        path: '/blog',
         component: lazy(() => import('src/views/BlogView'))
-    },    
+    },       
     {
         path: '/home',
         layout: MainLayout,
