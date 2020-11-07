@@ -1,8 +1,8 @@
 import { combineReducers } from '@reduxjs/toolkit';
-import { reducer as userReducer } from 'src/redux/slices/user';
+import { reducer as postsReducer } from 'src/redux/slices/posts';
 
 const rootReducer = combineReducers({
-  user: userReducer,
+  posts: postsReducer,
 });
 
 export default rootReducer;
