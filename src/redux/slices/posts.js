@@ -46,7 +46,6 @@ export const reducer = slice.reducer;
 export const getPostsAction = () => async (dispatch) => {
   try {
     const data = await getPosts();
-    //console.log('getPostsAction', data);
     dispatch(slice.actions.getPosts(data));
     const payload = {
       message: 'Datos obtenidos correctamente',

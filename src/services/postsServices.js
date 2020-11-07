@@ -2,7 +2,6 @@ import axios from 'axios';
 import { BASE_URL } from 'src/constants/index';
 
 export const getPosts = () => new Promise((resolve, reject) => {
-    console.log(BASE_URL)
     axios.get(BASE_URL+'/posts')
       .then((response) => {
         if (response.status === 200) {

@@ -12,7 +12,7 @@ import {
     Grid
 } from '@material-ui/core';
 import Post from './components/Post'
-
+import useComponentWillMount from 'src/hooks/useComponentWillMount'
 
 
 
@@ -36,8 +36,15 @@ const BlogView = () => {
     const dispatch = useDispatch();
     const classes = useStyles();
 
+    console.log(notistackContent)
+    //Component will mount
+    useComponentWillMount(()=>{
+        dispatch(getPostsAction())
+        console.log('he')
+    });
+
+    //Component did mount and did unmount
     useEffect(() => {
-        dispatch(getPostsAction());
         const interval = setInterval(() => {
             console.log('This will run every second!');
         }, 1000);
@@ -47,13 +54,13 @@ const BlogView = () => {
     // It is run after each new render
     useEffect(() => {
         if (notistackContent !== null && notistackContent !== undefined) {
+            dispatch(cleanNotificationAction());
             enqueueSnackbar(notistackContent.message, {
                 variant: notistackContent.variant,
                 autoHideDuration: 2000,
             });
-            dispatch(cleanNotificationAction());
         }
-    })
+    }, [notistackContent])
 
     return (
         <Box p={1} m={1} >
