@@ -1,22 +1,50 @@
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react'
+import {
+  ThemeProvider,
+} from '@material-ui/core';
+//import { MuiPickersUtilsProvider } from '@material-ui/pickers';
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
+import { SnackbarProvider } from 'notistack';
+import { transitions, positions, Provider as AlertProvider } from 'react-alert'
+import AlertDialog from 'react-alert-template-mui'
+import routes, { renderRoutes } from 'src/routes.js';
+import { createTheme } from 'src/theme';
+const history = createBrowserHistory();
+
+
+// optional configuration
+const options = {
+  // you can also just use 'bottom center'
+  position: positions.BOTTOM_CENTER,
+  timeout: 5000,
+  offset: '30px',
+  // you can also just use 'scale'
+  transition: transitions.SCALE
 }
+
+const App = () => {
+  const theme = createTheme({
+    theme: 'LIGHT'
+  });
+
+  return (
+    <ThemeProvider theme={theme}>
+        <SnackbarProvider
+          dense
+          maxSnack={3}
+        >
+          <AlertProvider template={AlertDialog} {...options}>
+            <Router history={history}>
+              {renderRoutes(routes)}
+            </Router>
+          </AlertProvider>
+        </SnackbarProvider>
+    </ThemeProvider>
+
+  )
+}
+
 
 export default App;
