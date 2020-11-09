@@ -1,4 +1,4 @@
-# Create a project in react 
+## Create a project in react 
 
 
 ### `npx create-react-app name`
@@ -12,7 +12,7 @@ Then you can erase the folder that is empty.
 
 In the next steps you need to create folders for all the project:
 
-# Folders
+## Folders
 
 ### `assets`
 ### `components`
