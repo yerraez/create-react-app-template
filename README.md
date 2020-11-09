@@ -3,7 +3,7 @@
 
 ### `npx create-react-app name`
 
-## Move all the files and folders to the repository 
+Move all the files and folders to the repository 
 
 ### `Move the archives to the repository` 
 
