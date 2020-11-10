@@ -20,21 +20,23 @@ In the next steps you need to create folders for all the project:
 * [hooks]
 * [layouts]
 
-In the folder of redux:
+In the folder of redux: 
 
-### `redux`
+* [redux]
 
-You need to create another folders in the folder of redux:
+Redux allow to modifying a state from anywhere in the code when is correctly configured.
 
-### `slices`
-### `store`
+-You need to create another folders in the folder of redux:
+
+** [slices]
+** [store]
 
 Then we can doing the creation of another folders:
 
-### `services`
-### `theme`
-### `utils`
-### `views`
+* [services]
+* [theme]
+* [utils]
+* [views]
 
 So after that we do all this steps, we can go to the rest of files of src and we need just the files:
 
