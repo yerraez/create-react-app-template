@@ -14,11 +14,11 @@ In the next steps you need to create folders for all the project:
 
 ## Folders
 
-*`assets`
-*`components`
-*`constants`
-*`hooks`
-*`layouts`
+* `assets`
+* `components`
+* `constants`
+* `hooks`
+* `layouts`
 
 In the folder of redux:
 
