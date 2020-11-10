@@ -26,7 +26,7 @@ In the folder of redux:
 
 Redux allow to modifying a state from anywhere in the code when is correctly configured.
 
--You need to create another folders in the folder of redux:
+- You need to create another folders in the folder of redux:
 
 ** [slices]
 ** [store]
