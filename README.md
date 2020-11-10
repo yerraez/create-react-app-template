@@ -2,11 +2,11 @@
 
 Use the next command: 
 
-### `npx create-react-app name`
+#### `npx create-react-app name`
 
 Move all the files and folders to the repository 
 
-### `Move the archives to the repository` 
+#### `Move the archives to the repository` 
 
 Then you can erase the folder that is empty.  
 
@@ -14,11 +14,11 @@ In the next steps you need to create folders for all the project:
 
 ## Folders
 
-* `assets`
-* `components`
-* `constants`
-* `hooks`
-* `layouts`
+* [assets]
+* [components]
+* [constants]
+* [hooks]
+* [layouts]
 
 In the folder of redux:
 
