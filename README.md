@@ -14,43 +14,43 @@ In the next steps you need to create folders for all the project:
 
 ## Folders
 
-* [assets]
-* [components]
-* [constants]
-* [hooks]
-* [layouts]
+* assets
+* components
+* constants
+* hooks
+* layouts
 
 In the folder of redux: 
 
-* [redux]
+* redux
 
 Redux allow to modifying a state from anywhere in the code when is correctly configured.
 
 - You need to create another folders in the folder of redux:
 
-* [slices]
+* slices
 
 In this folder we save all the states  
 
-* [store]
+* store
 
 In another hand this folder is connected to the global states
 
 Then we can doing the creation of another folders:
 
-* [services]
+* services
 
 This folders is used to storage the services that we can consume of a third parts or entities
 
-* [theme]
+* theme
 
 This folder is destined to storage the framework to use in the views or the Interface
 
-* [utils]
+* utils
 
 This folder contains functions that I created and I will reused
 
-* [views]
+* views
 
 Finally in this folder I can find the views of the project, the structure. 
 
