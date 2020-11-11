@@ -15,10 +15,16 @@ In the next steps you need to create folders for all the project:
 ## Folders
 
 * assets
+In this folder you can add multimedia like images, styles, css, etc.
 * components
+In this folder you can create new personalize components to use in all the project.
 * constants
+In this folder you can add constants that you can use in all the project
 * hooks
+In this folder you can create use personalize hooks to use in all the project
 * layouts
+In this folder you can create personalize layouts to use in all the project
+
 
 In the folder of redux: 
 
